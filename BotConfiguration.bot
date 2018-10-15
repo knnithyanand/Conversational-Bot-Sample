@@ -1,0 +1,27 @@
+{
+  "name": "EnterpriseBot",
+  "services": [
+    {
+      "type": "endpoint",
+      "name": "development",
+      "endpoint": "http://localhost:5000/api/messages",
+      "appId": "",
+      "appPassword": "",
+      "id": "1"
+    },
+    {
+      "type":"blob",
+      "name":"bot-state",
+      "connectionString":"DefaultEndpointsProtocol=https;AccountName=<AZURE_STORATE_ACCOUNT_NAME>;AccountKey=<AZURE_STORAGE_ACCOUNT_ACCESS_KEY>;EndpointSuffix=core.windows.net",
+      "container":"bot-state"
+    },
+    {
+      "type":"blob",
+      "name":"bot-data",
+      "connectionString":"DefaultEndpointsProtocol=https;AccountName=<AZURE_STORATE_ACCOUNT_NAME>;AccountKey=<AZURE_STORAGE_ACCOUNT_ACCESS_KEY>;EndpointSuffix=core.windows.net",
+      "container":"bot-data"
+    }
+  ],
+  "padlock": "",
+  "version": "2.0"
+}
